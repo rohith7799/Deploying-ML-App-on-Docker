@@ -105,14 +105,16 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
   Accepts a JSON payload and returns the diabetes prediction.
 
 ---
+🚀 Docker Commands Executed for Project Setup
+Build Docker Image
 
-## 👨‍💻 Author
+docker build -t diabetes_api .
+Run Docker Container
 
-**Your Name**  
-Machine Learning & Backend Developer  
-[GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile)
+docker run -p 8888:5000 diabetes_api
+Expose Port in Dockerfile
 
----
+docker tag diabetes_api rohithkumar124/diabetes_api:latest
 
 ## 📄 License
 
