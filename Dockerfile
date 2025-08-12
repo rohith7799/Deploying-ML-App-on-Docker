@@ -22,7 +22,8 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-# This tells Docker to listen on port 80 at runtime. Port 80 is the standard port for HTTP.
+# This tells Docker to listen on port 8000 at runtime. Port 8000 is the standard port for HTTP.
+# this is container port (inside port)
 EXPOSE 8000
 
 # This command tells Streamlit to run your app.py script when the container starts.
@@ -32,4 +33,4 @@ EXPOSE 8000
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
-
+# docker run -p 8000:8000 rohithkumar124/diabetic_app

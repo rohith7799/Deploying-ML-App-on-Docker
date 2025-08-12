@@ -70,3 +70,4 @@ def diabetes_pred(input_parameters: ModelInput):
 # cmd = python app_folder/main.py
 
 # docker_venv\Scripts\activate
+
